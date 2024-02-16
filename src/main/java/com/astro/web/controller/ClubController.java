@@ -11,7 +11,8 @@ import java.util.List;
 
 @Controller
 public class ClubController {
-    private ClubService clubService;
+    private final ClubService clubService;
+
     @Autowired
     public ClubController(ClubService clubService){
         this.clubService = clubService;
